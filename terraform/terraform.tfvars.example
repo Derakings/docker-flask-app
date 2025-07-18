@@ -1,0 +1,16 @@
+# terraform/terraform.tfvars.example
+# Copy this file to terraform.tfvars and update with your values
+
+# AWS Configuration
+aws_region = "us-east-1"
+instance_type = "t2.micro"
+
+# SSH Key Configuration
+existing_key_pair_name = "your-existing-key-pair-name"  # Replace with your AWS key pair name
+
+# Docker Image Configuration
+docker_image = "YOUR_DOCKERHUB_USERNAME/flask-docker-app:latest"
+
+# Network Configuration
+vpc_cidr = "10.0.0.0/16"
+public_subnet_cidrs = ["10.0.1.0/24", "10.0.2.0/24"]
