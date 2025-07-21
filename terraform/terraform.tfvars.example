@@ -9,8 +9,14 @@ instance_type = "t2.micro"
 existing_key_pair_name = "your-existing-key-pair-name"  # Replace with your AWS key pair name
 
 # Docker Image Configuration
-docker_image = "YOUR_DOCKERHUB_USERNAME/flask-docker-app:latest"
+docker_image = "derakings/flask-docker-app:latest"  # Use your actual DockerHub image
 
 # Network Configuration
 vpc_cidr = "10.0.0.0/16"
 public_subnet_cidrs = ["10.0.1.0/24", "10.0.2.0/24"]
+
+# Optional: Production scaling variables (uncomment if needed)
+# min_capacity = 1
+# max_capacity = 3
+# desired_capacity = 2
+# environment = "development"

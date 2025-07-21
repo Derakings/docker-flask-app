@@ -1,4 +1,3 @@
-# terraform/variables.tf
 variable "aws_region" {
   description = "AWS region"
   type        = string
@@ -14,13 +13,12 @@ variable "instance_type" {
 variable "existing_key_pair_name" {
   description = "Name of existing AWS key pair"
   type        = string
-  default     = "launch"  # Replace with your actual key pair name
+  default     = "launch"  
 }
 
 variable "docker_image" {
   description = "Docker image to deploy"
   type        = string
-  # Replace with your actual DockerHub username/image
   default = "derakings/flask-docker-app:latest"
 }
 
